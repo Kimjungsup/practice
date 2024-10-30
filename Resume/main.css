@@ -1,0 +1,107 @@
+/* --- 배경화면 --- */
+html { background: url(./paper-batang.jpg) no-repeat fixed center/cover; }
+
+/*--- 로그인/회원가입 ---*/
+
+#guest {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+}
+
+#guest a {
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    /* font-style: italic; */
+}
+
+#login {
+    text-align: right;
+    border: 1.5px solid black;
+    border-radius: 7px;
+}
+
+#login a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#signup {
+    text-align: right;
+    border: 1.5px solid black;
+    border-radius: 7px;
+}
+
+#signup a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* --- 메인 타이틀 --- */
+#main_title_1 {
+    font-size: 150px;
+    margin: 80px 10px;
+    text-align: center;
+}
+
+
+/* --- 자신 표현 키워드 --- */
+div{
+    align-items: center;  
+}
+
+#information {
+    font-size: 30px;
+    text-align: center;
+    margin: auto auto;
+    font-family: "STUNNING-Bd";
+}
+
+
+/* --- 세부 정보 --- */
+#info_detail {
+    font-size: 15px;
+    text-align: center;
+    font-family: "Pretendard-Regular";
+}
+
+
+/* --- 메뉴 --- */
+nav {
+    display: flex; 
+    /* align-items: center; */ 
+    /* flex-direction: vertical; */
+    /* text-align: center; */
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 5em;
+    font-family: "STUNNING-Bd";
+    text-align: center;
+}
+
+a:hover {color:whitesmoke;} 
+a:active {text-decoration: underline; color:black}
+
+
+
+/* 웹폰트 */
+@font-face {
+    font-family: 'STUNNING-Bd';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

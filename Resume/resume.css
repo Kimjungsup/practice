@@ -1,0 +1,120 @@
+/* --- 배경화면 --- */
+html { background: url(./paper-batang.jpg) no-repeat fixed center/cover; }
+
+
+/*--- 아웃라인 ---*/
+#outline {
+
+
+}
+
+/* --- 메뉴 --- */
+ nav {
+
+ }
+ 
+ nav a{
+     text-decoration: none;
+     font-size: 30p;
+     color: black;
+     margin: 2em;
+     flex-direction: column; 
+     font-family: "Pretendard-Regular";           
+ }  
+ a:hover {color:whitesmoke;} 
+ a:active {text-decoration: underline; color:black}
+
+/* --- 프필사진 --- */
+.profile_pic {
+    width: 200px; /* 이미지의 너비를 설정 */
+    height: 270px; /* 높이에 비례하여 크기 자동 조절 */
+    position: absolute ; /* 이미지 위치를 고정 */
+    top: 105px; /* 상단으로부터 10px 떨어진 위치 */
+    left: 20px; 
+}
+
+/* -- 이름/주소 -- */
+#info {
+    position: absolute ; /* 이미지 위치를 고정 */
+    top: 110px; /* 상단으로부터 110px 떨어진 위치 */
+    left: 240px; 
+}
+
+#info h2 {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    margin-bottom: -2%;
+}
+
+#info h3 {
+    font-size: 15px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+#info p {
+    font-family: "Pretendard-Regular";
+}
+
+/* --- 학력 --- */
+#academy h2, h3 {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+#academy h5 {
+    font-family: "Pretendard-Regular";
+    margin-top: -1.5%;
+}
+#academy p {
+    font-family: "Pretendard-Regular";
+    margin-bottom: -1%;
+}
+
+/* -- 경력 -- */
+#career h2 {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+#career p{
+    /* margin-top: -0.5%;     */
+}
+
+#career_lingtea p {
+    margin-bottom: 0%; 
+}
+
+#career h3 {
+    margin-bottom: -1%; 
+}
+
+#career dl{ 
+    font-family: 'Pretendard-Regular';
+    margin-top: 1%; 
+    margin-left: -1%;
+}
+
+/*-- 자격/어학 --*/
+#certification h2 {
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+table {
+    font-family: 'Pretendard-Regular';
+}
+.bold-text {
+    font-weight: bold;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+
+
+/* --- 폰트 --- */
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src:    url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

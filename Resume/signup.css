@@ -1,0 +1,66 @@
+/* --- 배경화면 --- */
+html { background: url(./paper-batang.jpg) no-repeat fixed center/cover; }
+
+/*--- div를 로그인 창 가운데 놓으려면 부모 컨테이너 또는 body에 display: flex;와 justify-content: center;, align-items: center; 속성을 추가해야 함
+height: 100vh;도 설정해 화면 전체 높이 기준으로 중앙 정렬 가능 ---*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div { 
+    width: 350px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family:'Pretendard-Regular';
+    font-weight: bold;
+    position: relative;  /* 포지션을 렐러티브로 주면 이동 좌표 쓸 수 있음 */
+    left: -230px;/*반대로 생각*/
+    top: 220px; /*반대로 생각*/
+}
+a:hover {color:whitesmoke;} 
+a:active {text-decoration: underline; color:black}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 웹폰트 */
+@font-face {
+    font-family: 'STUNNING-Bd';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
